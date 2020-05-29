@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courgette', cursive;
+}
+body{
+    background: linear-gradient(to bottom right, #1a2a6c, #b21f1f, #fdbb2d) center center fixed;
+    background-size: cover; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: .1125px;
+    padding-bottom: .1125px;
+    font-size: 1rem;
+  }
+span{
+    cursor: pointer;
+
+}
+.carousel{
+    margin: 5px;
+}
+.carousel-item img{
+    border-radius: 10px;
+    height: 88vh;
+}
+.modal-dialog,.modal-content{
+    
+    background:transparent;
+}
+.modal1{
+    justify-content: center;
+    text-align: center;
+}
+.modal1 img{
+    width: 60vh;
+    height: auto;
+}
+.modal-body img{
+    border-radius: 5px;
+    width: fit-content;
+    height: 70vh;
+}
+small{
+    font-size: .8em;
+}
+.dropdown-menu{
+    background: transparent;
+}
+.dropdown-menu .dropdown-item{
+    color: black;
+    text-shadow: 0 0 10px cyan;
+}
+.dropdown-menu .dropdown-item:hover{
+    background: transparent;
+    color: aqua;
+    font-size: 1.5em;
+    text-shadow: 0 0 100px cyan ;
+}
+.nav-item:hover{
+    color: aqua;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px cyan;
+}
+.nav-item{
+    background: transparent;
+
+    text-shadow: 0 0 100px cyan ;
+}
+.dropdown-item a:active{
+    color: aqua;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px cyan;
+}
+.text{
+    position:relative;
+    border: 2px solid black;
+    background-color:#000 ;
+    border-radius: 5px;
+    height: 90vh;
+    width: 90%;
+    margin: 15px;
+}
+.text::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background:white;
+    background:linear-gradient(315deg,#00c3ff, #ffff1c);
+    transform: skew(2deg,2deg);
+    z-index: -1;
+}
+
+.text:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background:linear-gradient(315deg,#00c3ff, #ffff1c);
+    transform: skew(2deg,2deg);
+    z-index: -1;
+    filter: blur(30px);
+}
+
+h1{
+    position: relative;
+    top: 30%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400px;
+}
+h1 span{
+    animation: animate 5s linear infinite;
+}
+h1 span:nth-child(1){
+    animation-delay:0s ;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.25s;
+}
+h1 span:nth-child(3){
+    animation-delay: .5s;
+}
+h1 span:nth-child(4){
+    animation-delay: .75s;
+}
+h1 span:nth-child(5){
+    animation-delay: 1s;
+}
+h1 span:nth-child(6){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(7){
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(8){
+    animation-delay: 1.75s;
+}
+h1 span:nth-child(9){
+    animation-delay:2s;
+}
+h1 span:nth-child(10){
+    animation-delay:2.25s ;
+}
+h1 span:nth-child(11){
+    animation-delay:2.5s ;
+}
+h1 span:nth-child(12){
+    animation-delay:2.75s ;
+}
+h1 span:nth-child(13){
+    animation-delay:3s ;
+}
+h1 span:nth-child(14){
+    animation-delay:3.25s ;
+}
+h1 span:nth-child(15){
+    animation-delay:3.5s ;
+}
+h1 span:nth-child(16){
+    animation-delay:3.75s ;
+}
+h1 span:nth-child(17){
+    animation-delay:4s ;
+}
+h1 span:nth-child(18){
+    animation-delay:4.25s ;
+}
+h1 span:nth-child(19){
+    animation-delay:4.5s ;
+}
+@keyframes animate
+{   
+    0%,100%
+    {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 320px #00b3ff,
+                    0 0 5200px #00b3ff,
+                    0 0 840px #00b3ff,
+                    0 0 1360px #00b3ff,
+                    0 0 2200px #00b3ff,
+                    0 0 3560px #00b3ff;
+    }
+    20%,80%
+    {
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+.box{
+    position:relative;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+
+
+ }
+ .card:hover{
+     box-shadow: 0 0 40px black;
+ }
+.card .img{
+    width: 119%;
+}
+.content video{
+    width: 70vh;
+}
